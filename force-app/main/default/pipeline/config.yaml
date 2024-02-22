@@ -1,0 +1,215 @@
+configFileVersion: 2.1.0  #
+fileType: non-buildable
+
+applicationDetails:
+  profile: cloud-native
+  system: csm
+  service: salesforce
+  appName: c1-salesforce
+  groupID: csm
+  workspace:
+  buildTool: nodejs
+  packaging:
+  buildToolParameters:
+  buildToolOpt:
+  settingsPath:
+
+notificationSettings:
+  notificationType:    #Allowed options: Email
+  recipient:
+
+SONARQUBE_SETTINGS:
+  Exclusions:
+
+# salesforce_transforms:
+#   - &sandbox_site_cacms
+#     filePath: force-app/main/default/sites/CACMS.site-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: certificate
+#       pValue: ''
+#   - &sandbox_appconfig_CrisisApikey
+#     filePath: force-app/main/default/customMetadata/Application_Config/Application_Config.CACMS_API_KEY.md-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: value
+#       pValue: 'pJfY33dQ]ofIRGwlNxbS!oi55hcjper68qjzR2ZXLmUNb1cHj!BLSwMWdjiqYU2f'
+#   - &sandbox_appconfig_RecaptchaSecret
+#     filePath: force-app/main/default/customMetadata/Application_Config/Application_Config.RECAPTCHA_SECRET_KEY.md-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: value
+#       pValue: '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe'
+#   - &sandbox_appconfig_RecaptchaSite
+#     filePath: force-app/main/default/customMetadata/Application_Config/Application_Config.RECAPTCHA_SITE_KEY.md-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: value
+#       pValue: '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+#   - &dev_cors_OracleHTTPServer
+#     filePath: force-app/main/default/corsWhitelistOrigins/OracleHTTPServer.corsWhitelistOrigin-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: urlPattern
+#       pValue: 'https://ddcwozrbohs01.ca.state.sbu:7443'
+#   - &dev_namedCred_CAServices
+#     filePath: force-app/main/default/namedCredentials/CA_Services.namedCredential-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: endpoint
+#       pValue: 'https://caservices-npe-dev-shared.state.gov'
+#   - &dev_namedCred_CAServicesCommon
+#     filePath: force-app/main/default/namedCredentials/CA_Services_Common_Services_API.namedCredential-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: endpoint
+#       pValue: 'https://caservices-npe-c1-dev-shared.state.gov'
+#   - &dev_connected_CMEMService
+#     filePath: force-app/main/default/connectedApps/CMEM_Service.connectedApp-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: certificate
+#       pValue: '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'
+#   - &dev_connected_SpringcloudGateway
+#     filePath: force-app/main/default/connectedApps/Spring_Cloud_Gateway.connectedApp-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: certificate
+#       pValue: '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'
+#   - &dev_appconfig_CRBACustomerURL
+#     filePath: force-app/main/default/customMetadata/Application_Config/Application_Config.CRBA_Customer_URL.md-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: value
+#       pValue: 'https://caprovservice-npe-dev-shared.state.gov/c1/www/eCRBA/customer-ui/'
+#   - &dev_appconfig_CrisisFrom
+#     filePath: force-app/main/default/customMetadata/Application_Config/Application_Config.CACMS_FROM_EMAIL_ON_PREM.md-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: value
+#       pValue: 'cacmsdev@elguardia.net'
+#   - &dev_appconfig_CrisisReplyto
+#     filePath: force-app/main/default/customMetadata/Application_Config/Application_Config.CACMS_REPLYTO_EMAIL_ON_PREM.md-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: value
+#       pValue: 'cacmsdev@state.gov'
+#   - &dev_workflow_CaseSender
+#     filePath: force-app/main/default/workflows/Case.workflow-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: senderAddress
+#       pValue: 'cacmsdev@state.gov'
+#   - &dev_workflow_ServiceAppointmentSender
+#     filePath: force-app/main/default/workflows/ServiceAppointment.workflow-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: senderAddress
+#       pValue: 'cacmsdev@state.gov'
+#   - &test_appconfig_CrisisFrom
+#     filePath: force-app/main/default/customMetadata/Application_Config/Application_Config.CACMS_FROM_EMAIL_ON_PREM.md-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: value
+#       pValue: 'cacmstest@elguardia.net'
+#   - &test_appconfig_CrisisReplyto
+#     filePath: force-app/main/default/customMetadata/Application_Config/Application_Config.CACMS_REPLYTO_EMAIL_ON_PREM.md-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: value
+#       pValue: 'cacmstest@state.gov'
+#   - &test_namedCred_CAServicesCommon
+#     filePath: force-app/main/default/namedCredentials/CA_Services_Common_Services_API.namedCredential-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: endpoint
+#       pValue: 'https://caservices-npe-c1-dev-int.state.gov'
+#   - &test_workflow_CaseSender
+#     filePath: force-app/main/default/workflows/Case.workflow-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: senderAddress
+#       pValue: 'cacmstest@state.gov'
+#   - &test_workflow_ServiceAppointmentSender
+#     filePath: force-app/main/default/workflows/ServiceAppointment.workflow-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: senderAddress
+#       pValue: 'cacmstest@state.gov'
+#   - &test_appconfig_CRBACustomerURL
+#     filePath: force-app/main/default/customMetadata/Application_Config/Application_Config.CRBA_Customer_URL.md-meta.xml
+#     xslt: pipeline/SalesforceMetadataTransform.xslt
+#     params:
+#       pTarget: value
+#       pValue: 'https://caprovservice-npe-test-sprint.state.gov/c1/www/eCRBA/customer-ui/'
+
+deploy:
+  deployType: salesforce
+  # sfTestSuitePath: force-app/main/default/testSuites/Deployment.testSuite-meta.xml
+  # sfPartialTestSuitePath: force-app/main/default/testSuites/PartialDeployment.testSuite-meta.xml
+  profiles:
+    # integrate:
+    #   parameters:
+    #     sfTestLevel: RunSpecifiedTests
+    #     xmlTransform:
+    #       - *sandbox_site_cacms
+    #       - filePath: force-app/main/default/authproviders/logingov.authprovider-meta.xml
+    #         xslt: pipeline/SalesforceMetadataTransform.xslt
+    #         params:
+    #           pTarget: executionUser
+    #           pValue: 'csm-service-account@state.gov.integrate'
+    #       - filePath: force-app/main/default/networks/CACMS.network-meta.xml
+    #         xslt: pipeline/SalesforceMetadataTransform.xslt
+    #         params:
+    #           pTarget: logoutUrl
+    #           pValue: 'https://consularone--integrate.sandbox.my.site.com/s/logout'
+    #       - filePath: force-app/main/default/customMetadata/Application_Config/Application_Config.COMMUNITY_URL.md-meta.xml
+    #         xslt: pipeline/SalesforceMetadataTransform.xslt
+    #         params:
+    #           pTarget: value
+    #           pValue: 'https://consularone--integrate.sandbox.my.site.com/s/'
+    #       - filePath: force-app/main/default/samlssoconfigs/OktaSingleSignOn.samlssoconfig-meta.xml
+    #         xslt: pipeline/SalesforceMetadataFileTransform.xslt
+    #         params:
+    #           paramMap:
+    #             issuer: 'exkaamhxpmCXkJss6297'
+    #             logoutUrl: 'https://statedev.okta.com/'
+    #             loginUrl: 'https://statedev.okta.com/app/salesforce/exkaamhxpmCXkJss6297/sso/saml'
+    #             oauthTokenEndpoint: 'https://consularone--integrate.sandbox.my.salesforce.com/services/oauth2/token'
+    #             salesforceLoginUrl: 'https://consularone--integrate.sandbox.my.salesforce.com'
+    #             samlEntityId: 'https://consularone--integrate.sandbox.my.salesforce.com'
+    #             validationCert: 'MIIKEjCCB/qgAwIBAgIEYIGCWzANBgkqhkiG9w0BAQsFADCBuzETMBEGCgmSJomT8ixkARkWA3Ni dTEVMBMGCgmSJomT8ixkARkWBXN0YXRlMRYwFAYDVQQDDA1Db25maWd1cmF0aW9uMREwDwYDVQQD DAhTZXJ2aWNlczEcMBoGA1UEAwwTUHVibGljIEtleSBTZXJ2aWNlczEMMAoGA1UEAwwDQUlBMTYw NAYDVQQDDC1VLlMuIERlcGFydG1lbnQgb2YgU3RhdGUgQUQgSGlnaCBBc3N1cmFuY2UgQ0EwHhcN MjEwODEyMjMwMzAwWhcNMjQwODEyMjMzMzAwWjCBpzETMBEGCgmSJomT8ixkARkWA3NidTEVMBMG CgmSJomT8ixkARkWBXN0YXRlMRswGQYKCZImiZPyLGQBGRYLYXBwc2VydmljZXMxHDAaBgNVBAsM E0VudGVycHJpc2UgU2VydmljZXMxDDAKBgNVBAsMA1BLSTEUMBIGA1UECwwLV2ViIFNlcnZlcnMx GjAYBgNVBAMMEXN0YXRlZGV2Lm9rdGEuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC AQEAu+yNDX3TDV7MR/lolfmIGkVoXxZ5DivezW0dqfc2AoeE+ksWHbBEdmSC9t7lb7vnI7dw35On Y1i7mAF2Bjxy/kW9Ki/uWpAILugmKRA9C14fJb/Uwjp5xjCJxrgic8CK28piRQ4JAvZ6Iif3pQys t81VEwdqwweOcvHkYroS/WR/ppAdVv/3u0A5F9GJcxE34w66rSBysqUk4J6hl+ELMksKNiZa6w5r D1N3QBb0lhaEx72sBauFSNwzi+uElygLcFm4usTxb0K5jnWhhtKYXcOJeXrtpJw2+p5RvcnENnAt MLwhlu1M6zZI7oTuyla6jLYPjbMz1Ke8wUhS5b32HwIDAQABo4IFLjCCBSowDgYDVR0PAQH/BAQD AgWgMBcGA1UdIAQQMA4wDAYKYIZIAWUDAgEGJTATBgNVHSUEDDAKBggrBgEFBQcDATCCAjIGCCsG AQUFBwEBBIICJDCCAiAwRAYIKwYBBQUHMAKGOGh0dHA6Ly9jcmxzLnBraS5zdGF0ZS5nb3YvQUlB L0NlcnRzSXNzdWVkVG9Eb1NBREhBQ0EucDdjMIHIBggrBgEFBQcwAoaBu2xkYXA6Ly9kaXIucGtp LnN0YXRlLmdvdi9jbj1VLlMuJTIwRGVwYXJ0bWVudCUyMG9mJTIwU3RhdGUlMjBBRCUyMEhpZ2gl MjBBc3N1cmFuY2UlMjBDQSxjbj1BSUEsY249UHVibGljJTIwS2V5JTIwU2VydmljZXMsY249U2Vy dmljZXMsY249Q29uZmlndXJhdGlvbixkYz1zdGF0ZSxkYz1zYnU/Y0FDZXJ0aWZpY2F0ZTtiaW5h cnkwgc8GCCsGAQUFBzAChoHCbGRhcDovL2Rpci5wa2kuc3RhdGUuZ292L2NuPVUuUy4lMjBEZXBh cnRtZW50JTIwb2YlMjBTdGF0ZSUyMEFEJTIwSGlnaCUyMEFzc3VyYW5jZSUyMENBLGNuPUFJQSxj bj1QdWJsaWMlMjBLZXklMjBTZXJ2aWNlcyxjbj1TZXJ2aWNlcyxjbj1Db25maWd1cmF0aW9uLGRj PXN0YXRlLGRjPXNidT9jcm9zc0NlcnRpZmljYXRlUGFpcjtiaW5hcnkwOwYIKwYBBQUHMAGGL2h0 dHA6Ly9vY3NwLnBraS5zdGF0ZS5nb3YvT0NTUC9Eb1NPQ1NQUmVzcG9uZGVyMBwGA1UdEQQVMBOC EXN0YXRlZGV2Lm9rdGEuY29tMIICAQYDVR0fBIIB+DCCAfQwggEVoIIBEaCCAQ2GMWh0dHA6Ly9j cmxzLnBraS5zdGF0ZS5nb3YvY3Jscy9Eb1NBRFBLSUhBQ0EtMS5jcmyGgddsZGFwOi8vZGlyLnBr aS5zdGF0ZS5nb3YvY249V2luQ29tYmluZWQxLGNuPVUuUy4lMjBEZXBhcnRtZW50JTIwb2YlMjBT dGF0ZSUyMEFEJTIwSGlnaCUyMEFzc3VyYW5jZSUyMENBLGNuPUFJQSxjbj1QdWJsaWMlMjBLZXkl MjBTZXJ2aWNlcyxjbj1TZXJ2aWNlcyxjbj1Db25maWd1cmF0aW9uLGRjPXN0YXRlLGRjPXNidT9j ZXJ0aWZpY2F0ZVJldm9jYXRpb25MaXN0O2JpbmFyeTCB2KCB1aCB0qSBzzCBzDETMBEGCgmSJomT 8ixkARkWA3NidTEVMBMGCgmSJomT8ixkARkWBXN0YXRlMRYwFAYDVQQDDA1Db25maWd1cmF0aW9u MREwDwYDVQQDDAhTZXJ2aWNlczEcMBoGA1UEAwwTUHVibGljIEtleSBTZXJ2aWNlczEMMAoGA1UE AwwDQUlBMTYwNAYDVQQDDC1VLlMuIERlcGFydG1lbnQgb2YgU3RhdGUgQUQgSGlnaCBBc3N1cmFu Y2UgQ0ExDzANBgNVBAMMBkNSTDc3NTArBgNVHRAEJDAigA8yMDIxMDgxMjIzMDMwMFqBDzIwMjMw ODE3MDYzMzAwWjAfBgNVHSMEGDAWgBSF4yjPJXqmAY3Fb/7FUnKqnqNMTjAdBgNVHQ4EFgQURsDC YM38TOGM/L5nvoBtW4ijekcwCQYDVR0TBAIwADAZBgkqhkiG9n0HQQAEDDAKGwRWOC4xAwIEsDAN BgkqhkiG9w0BAQsFAAOCAgEAFJS27b8mshKr8VjhLZbKQip474GMALyAbi80Pb4ItazLeB5yw7Yv XuMhN7sn5PW94zQaZn9nmIby6DSqS1dy6+MN1u7gOZ44Nm1T0Dp/H397xxRt65vCZveAxrEq9+jZ bH6rBoEWpR5HZA4LdkFPukus9l8nqBCUr/JjttfQ2uraG4jOIepcOHlxxHg/tw3U/uKBEeH8Z+OG 4FtFiVLDaM5jaFkGgKKCwLd+xOZ4+VQGOhD8vHLhmA6Cq4ifSMEB5Yynw8RMg8qpAmc+EyUqiqNn CcgaJH9cel0y8MIaMpzoYxqGOnOwhn4s+6srwPvzVKwShfeIdOt+w8fm6PSLGwX5LxwMALZ9dzsC kBWw1oqtLM3jdIBRlhLqUhYDV5rLm2CJI1yJNtnx9Q8uMUul5JcXHS+Eed8akTS5JGU/MGs7NKzD FL8GOWi30pjY7bxsJW2SUTmw9mh0t2H9fOD0oZeb11wyQLpZNTb9BwJv6AU6RqA/NUYSCNHkUS3y MjYW03hKy9rxH8to+uy9C1dp/PHBTmKmObsPjzj8UH5epbhrJUdT4ujWgD1CgzPLf20MkPRtD7hr qipIgxbnZLw0C+W08GI0wbkxGsbHJVW+VlVoXCdZYFVfwPMDVdcF9x0f1YKfApSukqUEWpXFjMOE miIQ+q2IL4ZYkvArCQ0Taac='
+    dev001:
+      parameters:
+        sfTestLevel: RunSpecifiedTests
+        xmlTransform:
+          - *sandbox_site_cacms
+          - *sandbox_appconfig_CrisisApikey
+          - *sandbox_appconfig_RecaptchaSecret
+          - *sandbox_appconfig_RecaptchaSite
+          - *dev_cors_OracleHTTPServer
+          - *dev_namedCred_CAServices
+          - *dev_namedCred_CAServicesCommon
+          - *dev_appconfig_CrisisFrom
+          - *dev_appconfig_CRBACustomerURL
+          - *dev_appconfig_CrisisReplyto
+          - *dev_workflow_CaseSender
+          - filePath: force-app/main/default/authproviders/logingov.authprovider-meta.xml
+            xslt: pipeline/SalesforceMetadataTransform.xslt
+            params:
+              pTarget: executionUser
+              pValue: 'csm-service-account@state.gov.dev001'
+          - filePath: force-app/main/default/networks/CACMS.network-meta.xml
+            xslt: pipeline/SalesforceMetadataTransform.xslt
+            params:
+              pTarget: logoutUrl
+              pValue: 'https://curious-moose-pv95pc-dev-ed.trailblaze.my.salesforce.com/secur/logout.jsp'
+          # - filePath: force-app/main/default/customMetadata/Application_Config/Application_Config.COMMUNITY_URL.md-meta.xml
+          #   xslt: pipeline/SalesforceMetadataTransform.xslt
+          #   params:
+          #     pTarget: value
+          #     pValue: 'https://consularone--dev001.sandbox.my.site.com/s/'
+    
+SEIDebug:
+  debug: False
+  logLevel: TRACE

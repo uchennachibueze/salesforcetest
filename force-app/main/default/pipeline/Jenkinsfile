@@ -1,0 +1,4 @@
+#!/usr/bin/env groovy
+@Library('ZERON-CI-Library') _
+zeronPipeline (
+    script: this)
